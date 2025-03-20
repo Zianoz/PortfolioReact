@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation(); // Get the current route
+  const [isOpen, setIsOpen] = useState(false); // State to toggle menu
 
   return (
     <>
@@ -9,12 +11,16 @@ export default function Navbar() {
         <nav className="navbar">
           <div className="navbar-container">
             <div className="navbar-logo">Zian</div>
-            <button className="navbar-toggle">
+
+            {/* Toggle Button */}
+            <button className="navbar-toggle" onClick={() => setIsOpen(!isOpen)}>
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>
             </button>
-            <ul className="navbar-menu">
+
+            {/* Navbar Menu */}
+            <ul className={`navbar-menu ${isOpen ? "open active" : ""}`}>
               <li>
                 <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
               </li>

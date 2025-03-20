@@ -50,8 +50,7 @@ body {
   border-radius: 10px;
   height: 80px;
   width: 100%;
-  position: sticky;
-  top: 0;
+
   background:transparent;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
@@ -60,11 +59,10 @@ body {
 
 .navbar-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 0 0rem;
-  padding-left: 1rem;
+  overflow: hidden;
   max-width: 100%;
   box-sizing: border-box;
   
@@ -76,7 +74,6 @@ body {
   color: white;
   text-decoration: none;
   cursor:pointer;
-  padding-right: 1rem;
 }
 
 .navbar-container .navbar-menu {
@@ -215,10 +212,9 @@ body {
 
 .card-wrapping {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   width: 100%;
-  flex-grow: 1;
   height: 150px;
 }
 
@@ -293,14 +289,13 @@ body {
   padding-top: 150px;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin-top:auto;
   width: 50rem;
   max-width: 100%;
 }
 
 .copyright-text{
   cursor: pointer;
-  margin-top: auto%;
 }
 
 .main-text{
@@ -397,13 +392,10 @@ textarea {
 }
 
 @media (max-width: 1305px) {
-  .navbar-container {
-      padding: 0 1rem;
-  }
   
   .navbar-container {
       font-size: 1.2rem;
-      padding: 3px 15px;
+      padding: 0rem;
   }
 }
 
@@ -441,6 +433,11 @@ textarea {
 @media (max-width: 800px) {
   .navbar{
       backdrop-filter: none;
+  }
+
+  .navbar-container {
+      padding: 0;
+      min-width: 100%;
   }
 
   .navbar-container .navbar-menu{
@@ -486,7 +483,7 @@ textarea {
 
 @media (max-width: 480px) {
   .navbar-container {
-      padding: 0 1rem;
+      padding: 0;
   }
   
   .navbar-logo    {
