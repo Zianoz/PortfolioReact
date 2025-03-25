@@ -5,6 +5,7 @@ import Photo from "../assets/photo.jpg";
 import GithubIcon from "../components/GithubIcon";
 import LinkedInIcon from "../components/LinkedInIcon";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -46,17 +47,17 @@ function Home() {
           <div className="main-wrapping">
             <h2>Experience</h2>
             <div className="view-more">
-              <a href="portfolio.html">View more</a>
+              <Link to="/portfolio">View more</Link>
             </div>
           </div>
           <div className="wrapping">
             <div className="card-wrapping">
-              <a href="portfolio.html" className="card">
+              <Link to="/portfolio" className="card">
                 <h2>Resumé/CV</h2>
                 <p>
                   My personal CV that lists all my experiences and achievements
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -65,13 +66,13 @@ function Home() {
           <div className="main-wrapping">
             <h2>Projects</h2>
             <div className="view-more">
-              <a href="projects.html">View More</a>
+              <Link to="/projects">View More</Link>
             </div>
           </div>
           <div className="wrapping">
             <div className="card-wrapping">
               <Card />
-
+                
               <a href="#project-two" className="card">
                 <h2>Project Two</h2>
                 <p>Some other thing</p>
