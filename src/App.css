@@ -104,7 +104,7 @@ body {
 .navbar-toggle {
   display: none;
   background: transparent;
-  padding: 10px;
+
   border: none;
   cursor: pointer;
 }

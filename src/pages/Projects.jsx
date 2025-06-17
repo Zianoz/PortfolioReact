@@ -12,7 +12,7 @@ function Projects() {
           <div className="main-text">
             <h1>Projects</h1>
           </div>
-          <GithubAPI /> {/* This now dynamically creates project cards */}
+          <GithubAPI />
         </section>
       </main>
       <Footer />

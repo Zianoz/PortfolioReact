@@ -8,7 +8,7 @@ export default function GithubAPI() {
       try {
         const response = await fetch("https://api.github.com/users/zianoz/repos");
         const data = await response.json();
-        setProjects(data); // Store all projects
+        setProjects(data);
       } catch (error) {
         console.error("Error fetching GitHub data:", error);
       }
