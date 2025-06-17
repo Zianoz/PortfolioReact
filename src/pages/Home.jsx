@@ -6,18 +6,52 @@ import GithubIcon from "../components/GithubIcon";
 import LinkedInIcon from "../components/LinkedInIcon";
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Home() {
+  const [typedKeys, setTypedKeys] = useState("");
+  const [showEasterEgg, setShowEasterEgg] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      const key = event.key;
+      if (!/^\d$/.test(key)) return; // only digits
+      
+      setTypedKeys((prev) => {
+        const newKeys = (prev + key).slice(-5); // keep last 5 keys
+        if (newKeys === "42069") {
+          setShowEasterEgg(true);
+        }
+        return newKeys;
+      });
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <>
       <Navbar />
 
-      <div id="easterEggModal" className="modal">
-        <div className="modal-content">
-          <span className="close">&times;</span>
-          <h2>42069!</h2>
+      {showEasterEgg && (
+        <div className="modal" style={{ display: "block" }}>
+          <div className="modal-content">
+            <span
+              className="close"
+              onClick={() => setShowEasterEgg(false)}
+              style={{ cursor: "pointer" }}
+            >
+              &times;
+            </span>
+            <h2>42069!</h2>
+            <p> You found the easter egg!</p>
+          </div>
         </div>
-      </div>
+      )}
 
       <main>
         <section className="wrapping">
@@ -72,7 +106,7 @@ function Home() {
           <div className="wrapping">
             <div className="card-wrapping">
               <Card />
-                
+
               <a href="#project-two" className="card">
                 <h2>Project Two</h2>
                 <p>Some other thing</p>
@@ -94,10 +128,10 @@ function Home() {
                 </div>
               </div>
             </div>
+            <Footer />
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

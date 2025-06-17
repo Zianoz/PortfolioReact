@@ -5,7 +5,7 @@ export default function Footer() {
 
   useEffect(() => {
     if (clickCount >= 5) {
-      document.body.style.backgroundColor = 'blue';
+      document.body.style.backgroundColor = 'gray';
     }
   }, [clickCount]);
 

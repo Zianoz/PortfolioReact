@@ -69,11 +69,20 @@ function About() {
               magnam hic obcaecati aut, numquam, quibusdam illum fugiat! Sint ut
               mollitia corporis itaque.
             </p>
+
+          <div class="wrapping">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              necessitatibus reiciendis quo ea corporis facilis explicabo itaque
+              magnam hic obcaecati aut, numquam, quibusdam illum fugiat! Sint ut
+              mollitia corporis itaque.
+            </p>
+          </div>
+      <Footer />
           </div>
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

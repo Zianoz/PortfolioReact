@@ -15,7 +15,6 @@ function Projects() {
           <GithubAPI />
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -30,10 +30,10 @@ function Contact() {
                     <button class="submit-btn">Submit</button>
                 </div>
               </form>
+      <Footer />  
             </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

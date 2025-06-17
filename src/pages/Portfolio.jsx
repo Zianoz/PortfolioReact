@@ -15,10 +15,10 @@ function Portfolio() {
                 </div>
 
                 <img src={CV} alt="cv" className="portfolio-image" />
+      <Footer />
             </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
