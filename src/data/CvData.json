@@ -1,0 +1,72 @@
+{
+  "name": "Pakapol (Zian) Pathumthammarong",
+  "title": "Fullstack Developer Student",
+  "profile": "Driven and curious fullstack student within .NET with a strong passion for programming, problem-solving, and system development. Through personal projects I have gained practical skills in backend and frontend, from database management in SQL to modern web frameworks such as React and Blazor. Previous experience in customer service has given me structure, collaboration skills, and a customer-focused mindset.",
+  "contact": {
+    "email": "Zianpakapol@gmail.com",
+    "phone": "0700414262",
+    "address": "Råcksta Gårdsväg 25"
+  },
+  "languages": ["English", "Swedish", "Thai"],
+  "hobbies": ["Computers", "Programming", "Technology", "Gym", "Gaming"],
+  "education": [
+    {
+      "school": "Chas Academy",
+      "program": "Fullstack Developer .NET",
+      "years": "2024 - Present",
+      "description": "A vocational program focused on software development in C#, HTML, CSS, JS, SQL, React, and .NET."
+    },
+    {
+      "school": "LBS Stockholm Norra",
+      "program": "Technology, System Development",
+      "years": "2020 - 2023",
+      "description": "Technical program with a focus on programming, backend and frontend development."
+    }
+  ],
+  "skills": {
+    "programming": ["C#", ".NET", "SQL", "HTML", "CSS", "JavaScript", "React", "Python", "MVC"],
+    "databases": ["SQL Server", "Entity Framework"],
+    "other": ["Git/GitHub", "OOP", "REST API", "UI/UX basics"]
+  },
+  "projects": [
+    {
+      "name": "Hotel Management System",
+      "tech": ["C#"],
+      "description": "Implemented classes for different roles and functionality for bookings and management."
+    },
+    {
+      "name": "REST API CV Manager",
+      "tech": ["C# .NET", "EF Core"],
+      "description": "Developed a REST API solution for handling persons, education, and work experiences."
+    },
+    {
+      "name": "Terminal-based Banking System",
+      "tech": ["C#", ".NET", "OOP"],
+      "description": "Built a terminal-based banking system with login, transactions, and role management."
+    },
+    {
+      "name": "Portfolio Website",
+      "tech": ["HTML", "CSS", "JS", "React"],
+      "description": "Designed and built a responsive portfolio with multiple subpages."
+    },
+    {
+      "name": "Dynamic App",
+      "tech": ["C#", "MVC"],
+      "description": "Developed a café website where users can book tables, fetch data, log in, and manage data through an admin login."
+    },
+    {
+      "name": "Job Portal",
+      "tech": ["C#", "React JS", "Firebase", "API"],
+      "description": "Larger group project with a working login system, Firebase integration, and global APIs to simplify job searching."
+    }
+  ],
+  "work_experience": [
+    {
+      "role": "Park Food Service Staff",
+      "company": "Gröna Lunds Tivoli",
+      "location": "Stockholm",
+      "years": "2023 – 2024",
+      "description": "Cash handling, cooking, order management, and customer service. Developed stress tolerance, communication, and teamwork skills."
+    }
+  ]
+}
