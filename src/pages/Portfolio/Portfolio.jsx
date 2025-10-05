@@ -88,7 +88,7 @@ function Portfolio() {
                       {skillsArray.map((skill) => (
                         <li
                           key={skill}
-                          className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                          className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
                         >
                           {skill}
                         </li>

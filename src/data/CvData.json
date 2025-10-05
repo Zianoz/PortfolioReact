@@ -24,9 +24,11 @@
     }
   ],
   "skills": {
-    "programming": ["C#", ".NET", "SQL", "HTML", "CSS", "JavaScript", "React", "Python", "MVC"],
-    "databases": ["SQL Server", "Entity Framework"],
-    "other": ["Git/GitHub", "OOP", "REST API", "UI/UX basics"]
+    "Programming Languages": ["C#", "Python", "JavaScript", "HTML", "CSS", "SQL"],
+    "Frameworks & Technologies": [".NET", "Entity Framework", "React", "Tailwind CSS", "ASP.NET MVC"],
+    "Databases": ["Microsoft SQL Server"],
+    "Tools & Platforms": ["Git", "GitHub", "Visual Studio", "VS Code"],
+    "Core Competencies": ["OOP", "REST API", "UI/UX Principles", "Version Control"]
   },
   "projects": [
     {
